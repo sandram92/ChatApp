@@ -104,6 +104,9 @@ html body {
   align-self: flex-end;
   font-weight: 400;
 }
+.test{
+ background-color: red;
+}
 
 /* Chat Input  */
 .chat-input {
@@ -115,8 +118,8 @@ html body {
   border: none;
   background: rgba(72, 112, 223, 1);
   color: white;
-  height: 40px;
-  width: 40px;
+  height:35px;
+  width: 35px;
   border-radius: 50%;
 }
 

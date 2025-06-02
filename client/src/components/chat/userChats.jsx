@@ -1,8 +1,10 @@
-import { useFetchRecipiantUser } from "../../hooks/useFetchRecipiant";
+import { useFetchRecipientUser } from "../../hooks/useFetchRecipient";
 import { Stack } from "react-bootstrap";
 
 const UserChat = ({ chat, user }) => {
-  const { recipiantUser } = useFetchRecipiantUser(chat, user);
+
+  const { recipientUser } = useFetchRecipientUser(chat, user);
+
   return (
     <Stack
       direction="horizontal"
@@ -53,7 +55,7 @@ const UserChat = ({ chat, user }) => {
           </svg>
         </div>
         <div className="text-content">
-          <h6 className="name">{recipiantUser?.name}</h6>
+          <h6 className="name">{recipientUser?.name}</h6>
           <p className="text">Last message</p>
         </div>
       </div>
